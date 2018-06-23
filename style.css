@@ -1,0 +1,32 @@
+.nav-item{
+    border-left: 1px solid #ccc;
+}
+
+button.navbar-toggler{
+    border: none;
+}
+
+.logo-col{
+    border-right: 1px solid #ccc;
+}
+
+.logo-text{
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 576px){
+    .logo{
+        width: 150px;
+    }
+
+    .logo-col{
+        border-right: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .logo-text{
+        font-size: 1.5em;
+    }
+}
+
