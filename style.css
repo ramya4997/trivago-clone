@@ -1,9 +1,14 @@
-.nav-item{
+.navbar-nav .nav-item{
     border-left: 1px solid #ccc;
 }
 
 button.navbar-toggler{
     border: none;
+}
+
+.hero-container{
+    height: 100vh;
+    padding-top: 5%;
 }
 
 .logo-col{
