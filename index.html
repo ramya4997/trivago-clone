@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivago-clone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
 </head>
@@ -46,7 +48,7 @@
 
     <!-- hero section -->
 
-    <div class="container text-center hero-container">
+    <div class="container hero-container">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-4 offset-md-4 col-lg-3 offset-lg-1 logo-col">
                 <img src="images/Trivago.svg.png" class="img-fluid logo" alt="">
@@ -54,39 +56,213 @@
             <div class="col-xs-12 col-sm-8 col-md-4 col-lg-7 logo-text px-5">
                 <p class="font-weight-bold">Find your ideal hotel and compare prices from different websites</p>
             </div>
-            <div class="col-xs-12col-md-8 offset-md-2 col-lg-10 offset-lg-1  mt-4">
+            <div class="col-xs-12 col-md-8 offset-md-2 col-lg-10 offset-lg-1  mt-5">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text bg-white ">
                             <i class="fas fa-search"></i>
                         </span>
                     </div>
-                    <input type="text" class="form-control border-left-0" placeholder="e.g Manali" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control border-left-0" placeholder="e.g; Manali" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                        <button class="btn btn-info" type="button">Search</button>
+                        <button class="btn btn-info rounded-0" type="button">Search</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- suggesstions -->
     <div class="container">
-        <h4 class="text-primary">Don't know where to go? Let us inspire you</h4>
-
-        <ul class="nav">
+        <h4 class="text-info">Don't know where to go? Let us inspire you</h4>
+        <!-- tabs -->
+        <ul class="nav nav-tabs mb-3 font-weight-bold" id="myTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active text-secondary" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                <a class="nav-link px-2 py-3 active text-secondary" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                    aria-selected="true">Top cities</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-secondary" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                    aria-selected="false">Profile</a>
+                <a class="nav-link px-2 py-3 text-secondary" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                    aria-selected="false">Top destinations</a>
             </li>
         </ul>
+        <!-- tabs content -->
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus modi enim velit ea expedita, mollitia
-                amet odit eaque dolor hic magni, dolore laborum, harum cupiditate. Earum inventore sint dolorem.</div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ad ex eaque beatae ut praesentium voluptatibus
-                odio iste quas, repudiandae voluptatem at fuga quaerat aut nisi aliquam quod sapiente nam!</div>
+
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <!-- carousel -->
+                <div id="top-cities" class="owl-carousel owl-theme owl-loaded">
+                    <div>
+                        <div class="card border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/mumbai.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Hotels in Mumbai</h5>
+                                <p class="card-text">7113 hotels
+                                    <b>Avg. ₹3,831</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/delhi.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Hotels in Delhi</h5>
+                                <p class="card-text">7113 hotels
+                                    <b>Avg. ₹3,831</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/dubai.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Hotels in Dubai</h5>
+                                <p class="card-text">7113 hotels
+                                    <b>Avg. ₹3,831</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/jaipur.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Hotels in Jaipur</h5>
+                                <p class="card-text">7113 hotels
+                                    <b>Avg. ₹3,831</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel end -->
+            </div>
+
+            <div class="tab-pane fade " id="profile" role="tabpanel " aria-labelledby="profile-tab ">
+                <!-- carousel -->
+                <div id="top-destinations" class="owl-carousel">
+                    <div>
+                        <div class="card border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/goa-hotels.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Hotels in Goa</h5>
+                                <p class="card-text">7113 hotels
+                                    <b>Avg. ₹3,831</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/dubail-hotels.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Hotels in Dubai</h5>
+                                <p class="card-text">7113 hotels
+                                    <b>Avg. ₹3,831</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/delhi-hotels.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Hotels in Delhi</h5>
+                                <p class="card-text">7113 hotels
+                                    <b>Avg. ₹3,831</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/rajasthan-hotels.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Hotels in Rajasthan</h5>
+                                <p class="card-text">7113 hotels
+                                    <b>Avg. ₹3,831</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- carousel end -->
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h4 class="text-info mb-3">trivago's global hotel search</h4>
+                <p>trivago’s hotel search allows users to compare hotel prices in just a few clicks from more than 400 booking
+                    sites for 1.8 million+ hotels in over 190 countries. With 1.4 billion visits annually to our site, travellers
+                    regularly use the hotel comparison to compare deals in the same city. Get information for weekend trips
+                    to cities like
+                    <a href="https://www.trivago.in/mumbai-84780/hotel">Mumbai</a> or
+                    <a href="https://www.trivago.in/bengaluru-84774/hotel">Bengaluru</a> and you can find the right hotel on trivago quickly and easily.
+                    <a href="https://www.trivago.in/delhi-84766/hotel">Delhi</a> and its surrounding area are great for trips that are a week or longer with the numerous hotels
+                    available.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h4 class="text-info mb-3">Find cheap hotels on trivago</h4>
+                <p>With trivago you can easily
+                    <b>find your ideal hotel and compare prices from different websites.</b> Simply enter where you want to
+                    go and your desired travel dates, and let our hotel search engine compare accommodation prices for you.
+                    To refine your search results, simply filter by price, distance (e.g. from the beach), star category,
+                    facilities and more. From budget hostels to luxury suites, trivago makes it easy to book online. You
+                    can search from a large variety of rooms and locations across India, like
+                    <a href="https://www.trivago.in/shimla-84770/hotel">Shimla</a> and
+                    <a href="https://www.trivago.in/jaipur-84788/hotel">Jaipur</a> to popular cities and holiday destinations abroad!
+                </p>
+            </div>
+            <div class="com-sm-12 col-md-6">
+                <h4 class="text-info mb-3">Hotel reviews help you find your ideal hotel</h4>
+                <p>Over 175 million aggregated hotel ratings and more than 19 million images allow you to find out more about
+                    where you're travelling. To get an extended overview of a hotel property, trivago shows the average rating
+                    and extensive reviews from other booking sites, e.g. Hotels.com, Expedia, Agoda, leading hotels, etc.
+                    trivago makes it easy for you to find information about your trip to
+                    <a href="https://www.trivago.in/dubai-549/hotel">Dubai</a>, including the ideal hotel for you.</p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h4 class="text-info mb-3">How to book</h4>
+                <p>trivago is a hotel search with an extensive price comparison. The prices shown come from numerous hotels
+                    and booking websites. This means that while users decide on trivago which hotel best suits their needs,
+                    the booking process itself is completed through the booking sites (which are linked to our website).
+                    By clicking on the “view deal” button, you will be forwarded onto a booking site where you can complete
+                    the reservation for the hotel deal found on trivago.</p>
+                <p>Let trivago help you to find the right price from over 400 booking sites!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h4 class="text-info mb-3">More top cities</h4>
+        <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <ul class="flex">
+                    <li class="li flex-item">Chennai</li>
+                    <li class="li flex-item">Shimla</li>
+                    <li class="li flex-item">Gurgaon</li>
+                    <li class="li flex-item">Nainital</li>
+                    <li class="li flex-item">Kolkata</li>
+                    <li class="li flex-item">Kochi</li>
+                    <li class="li flex-item">Amritsar</li>
+                    <li class="li flex-item">Tirupati</li>
+                    <li class="li flex-item">Gangtok</li>
+                    <li class="li flex-item">Noida</li>
+                    <li class="li flex-item">Varanasi</li>
+                    <li class="li flex-item">Jaisalmer</li>
+                    <li class="li flex-item">Kathmandu</li>
+                    <li class="li flex-item">Berlin</li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -96,8 +272,11 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="
+                        anonymous "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js "></script>
+    <script src="js/main.js "></script>
 </body>
 
 </html>
