@@ -47,12 +47,57 @@ button.navbar-toggler {
   margin: 0.4em;
 }
 
-.flex{
+.more-links-list {
   padding: 0;
   margin: 0;
   list-style: none;
-  height: 200px;
+  height: 100px;
   overflow-y: scroll;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-around; */
+}
+
+.more-links-list li {
+  width: 33.3%;
+}
+
+.more-links-list li a{
+  color: #333;
+}
+
+@media screen and (man-width: 576px) {
+  .more-links-list li {
+    width: 50%;
+  }
+}
+.flag {
+  height: 30px;
+}
+
+.countries-dropdown .dropdown-toggle::after {
+  /* display: none !important;*/
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+
+.social-links {
+  list-style: none;
+}
+
+.social-links li i {
+  border-radius: 50%;
+  background: white;
+  color: #343a40;
+  padding: 0.5em;
+}
+
+.services li{
+  list-style-type: none;  
+}
+
+.services li a{
+  color: white
 }
